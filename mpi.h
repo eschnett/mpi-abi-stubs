@@ -565,7 +565,7 @@ int MPI_Abi_get_fortran_booleans(int logical_size, void *logical_true, void *log
 int MPI_Abi_get_fortran_info(MPI_Info *info);
 int MPI_Abi_get_info(MPI_Info *info);
 int MPI_Abi_get_version(int *abi_major, int *abi_minor);
-int MPI_Abi_set_fortran_booleans(int logical_size, void *logical_true, void *logical_false);
+int MPI_Abi_set_fortran_booleans(int logical_size, const void *logical_true, const void *logical_false);
 int MPI_Abi_set_fortran_info(MPI_Info info);
 int MPI_Abort(MPI_Comm comm, int errorcode);
 int MPI_Accumulate(const void *origin_addr, int origin_count, MPI_Datatype origin_datatype, int target_rank, MPI_Aint target_disp, int target_count, MPI_Datatype target_datatype, MPI_Op op, MPI_Win win);
